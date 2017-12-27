@@ -7,19 +7,112 @@ h2{
   font-weight: 300;
   font-size: 16px;
 }
+
+caption{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+tr{
+  z-index: 100 !important;
+  transition: 0.5s;
+}
+tr:hover{
+  background: rgba(255, 255, 255, 0.2)
+}
+.name{
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  min-width: 100px;
+  text-align: right;
+  padding: 20px;
+}
+.function{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+.projlink{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  min-width: 150px;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+.projlink > a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
 #newtab{
   color: white;
   transition: 0.5s;
 }
+#content *{
+  pointer-events: auto;
+}
 #content{
+  pointer-events: none;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s ease-in-out;
+}
+#projcentered{
+  text-align: center;
+}
+#centered{
+  text-align: center;
+}
+#content.shown{
+  transform: translateY(0vh);
+}
+#content.hidden{
+  transform: translateY(-55vh);
+}
+#main{
+  transition: 0.8s ease-in-out;
+}
+#content.shown #main{
+  opacity: 1;
+}
+#content.hidden #main{
+  opacity: 0;
+}
+#projects{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  transition: 0.8s ease-in-out;
 }
-#centered{
-  text-align: center;
+#projects.shown{
+  transform: scale(1);
+  opacity: 1;
+}
+#projects.hidden{
+  transform: scale(0.8);
+  opacity: 0;
 }
 #nickname{
   font-family: "Open Sans", sans-serif;
@@ -33,7 +126,7 @@ h2{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 0;
+  z-index: -2;
   position: absolute
 }
 #links{
@@ -53,6 +146,16 @@ h2{
 #s4{top: -100%; left: 2%}
 #s5{top: -100%; left: -8%}
 #s6{top: -100%; left: -10%}
+#downwards{
+  transform: rotate(0deg);
+  transition: transform 0.8s ease-in-out;
+}
+#downwards.inverted{
+  transform: rotate(180deg);
+}
+#downwards:hover{
+  cursor: pointer;
+}
 .link{
   text-align: center;
   width: 150px;
@@ -78,4 +181,8 @@ h2{
   display: relative;
   height: 32px;
 }
-.square{position: relative}
+.square{
+  user-drag: none;
+  user-select: none;
+  position: relative
+}
