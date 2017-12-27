@@ -55,7 +55,11 @@ tr:hover{
   color: white;
   text-decoration: none;
 }
-
+#ghpages{
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  opacity: 0.2
+}
 #newtab{
   color: white;
   transition: 0.5s;
@@ -82,8 +86,15 @@ tr:hover{
 #content.shown{
   transform: translateY(0vh);
 }
-#content.hidden{
-  transform: translateY(-55vh);
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #content.hidden{
+    transform: translateY(-40vh);
+  }
+}
+@media only screen and (min-device-width : 768px){
+  #content.hidden{
+    transform: translateY(-60vh);
+  }
 }
 #main{
   transition: 0.8s ease-in-out;
@@ -93,6 +104,12 @@ tr:hover{
 }
 #content.hidden #main{
   opacity: 0;
+}
+#content.shown #main *{
+  pointer-events: auto;
+}
+#content.hidden #main *{
+  pointer-events: none;
 }
 #projects{
   position: absolute;
