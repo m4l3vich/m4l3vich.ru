@@ -7,7 +7,12 @@ h2{
   font-weight: 300;
   font-size: 16px;
 }
-
+a{
+  transition: 0.2s ease-in-out;
+}
+a:hover{
+  opacity: 0.6;
+}
 caption{
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
