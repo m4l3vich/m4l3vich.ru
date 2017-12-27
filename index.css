@@ -60,6 +60,9 @@ tr:hover{
   color: white;
   text-decoration: none;
 }
+#bloglink{
+  color: #B388FF;
+}
 #ghpages{
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -153,7 +156,7 @@ tr:hover{
 }
 #links{
   height: 50px;
-  width: 640px;
+  width: 800px;
   border: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   text-align: left;
