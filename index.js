@@ -1,3 +1,6 @@
+// Source code is available under MIT License
+// License text is available at https://github.com/m4l3vich/m4l3vich.ru/blob/master/LICENSE.md
+
 /* eslint-env jquery */
 $(document).ready(function () {
   $('.linkcontent').mouseenter(function () {
