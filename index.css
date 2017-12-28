@@ -13,6 +13,7 @@ h2{
 }
 a{
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 a:hover{
   opacity: 0.6;
@@ -55,14 +56,12 @@ tr:hover{
   min-width: 150px;
   text-align: left;
   padding: 10px;
-  text-decoration: none;
 }
 .projlink > a{
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: white;
-  text-decoration: none;
 }
 #bloglink{
   color: #B388FF;
@@ -71,6 +70,10 @@ tr:hover{
   font-family: "Open Sans", sans-serif;
   color: white;
   opacity: 0.2
+}
+#ghpages > a{
+  font-weight: 500;
+  color: white;
 }
 #newtab{
   color: white;
@@ -196,7 +199,6 @@ tr:hover{
   top: -9px;
   font-size: 18px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 .divider{
   width: 2px;
