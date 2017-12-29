@@ -93,6 +93,7 @@ tr:hover{
   transition: 0.8s ease-in-out;
 }
 #projcentered{
+	padding-top: 80px;
   text-align: center;
 }
 #centered{
