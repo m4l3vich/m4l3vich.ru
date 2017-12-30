@@ -32,6 +32,29 @@ tr{
 tr:hover{
   background: rgba(255, 255, 255, 0.2)
 }
+.notification{
+  position: absolute;
+  max-width: 400px;
+  max-height: 80px;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  animation: notification 0.8s ease-in-out;
+  padding: 15px;
+  margin: 20px;
+  background: white;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+@keyframes notification {
+  from{
+    transform: translateY(-200%)
+  }
+  to{
+    transform: translateY(0%)
+  }
+}
 .name{
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -98,6 +121,9 @@ tr:hover{
 }
 #centered{
   text-align: center;
+}
+#centered *{
+  display: auto;
 }
 #content.shown{
   transform: translateY(0vh);
