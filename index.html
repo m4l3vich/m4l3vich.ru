@@ -9,8 +9,14 @@ License text is available at https://github.com/m4l3vich/m4l3vich.ru/blob/master
   <meta property="og:title" content="M4L3VICH">
   <meta property="og:image" content="img/logo_grey.png">
   <meta property="og:description" content="Личный вебсайт Евгения Малевича">
+  <style>
+    #preloader{display: flex;align-items: center;justify-content: center;position: absolute;top: 0;left: 0;z-index: 10000;width: 100vw;height: 100vh;background-color: #BDBDBD;}
+  </style>
 </head>
 <body>
+  <div id="preloader">
+    <img id="preloaderAnimation" src="img/preloader.gif" />
+  </div>
   <div id="squares">
     <img src="img/square1.png" class="square" id="s1" draggable="false">
     <img src="img/square2.png" class="square" id="s2" draggable="false">
@@ -98,7 +104,14 @@ License text is available at https://github.com/m4l3vich/m4l3vich.ru/blob/master
       <h2 id="ghpages">Создано с помощью <a href="https://github.com/m4l3vich/m4l3vich.ru" target="_blank">GitHub Pages</a></h2>
     </div>
   </div>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+   WebFont.load({
+      google: {
+        families: ['Open Sans:300,400']
+      }
+    });
+  </script>
   <link href="index.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallaxify/0.0.2/jquery.parallaxify.min.js"></script>
