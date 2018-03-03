@@ -26,15 +26,23 @@ $(document).ready(function () {
 $(window).on('load', function () {
   $('#preloader').delay(500).fadeOut('slow')
 });
+
+function moveSquares (xOffset, yOffset) {
+  $('#s1').css({ "transform": `translate(${0 + (xOffset / 50)}px, ${0 + (yOffset / 50)}px)` })
+  $('#s2').css({ "transform": `translate(${0 + (xOffset / 250)}px, ${0 + (yOffset / 250)}px)` })
+  $('#s3').css({ "transform": `translate(${0 + (xOffset / 100)}px, ${0 + (yOffset / 100)}px)` })
+  $('#s4').css({ "transform": `translate(${0 + (xOffset / 80)}px, ${0 + (yOffset / 80)}px)` })
+  $('#s5').css({ "transform": `translate(${0 + (xOffset / 400)}px, ${0 + (yOffset / 400)}px)` })
+  $('#s6').css({ "transform": `translate(${0 + (xOffset / 20)}px, ${0 + (yOffset / 20)}px)` })
+}
 $('body').mousemove(function (e) {
-  var change;
-  var left = change * 20;
-  xpos = e.clientX * 2;
-  ypos = e.clientY * 2;
-  $('#s1').css({"transform": `translate(${0+(xpos/50)}px, ${0+(ypos/50)}px)`})
-  $('#s2').css({"transform": `translate(${0+(xpos/250)}px, ${0+(ypos/250)}px)`})
-  $('#s3').css({"transform": `translate(${0+(xpos/100)}px, ${0+(ypos/100)}px)`})
-  $('#s4').css({"transform": `translate(${0+(xpos/80)}px, ${0+(ypos/80)}px)`})
-  $('#s5').css({"transform": `translate(${0+(xpos/400)}px, ${0+(ypos/400)}px)`})
-  $('#s6').css({"transform": `translate(${0+(xpos/20)}px, ${0+(ypos/20)}px)`})
-});
+  xOffset = e.clientX * 2;
+  yOffset = e.clientY * 2;
+  moveSquares(xOffset, yOffset)
+})
+
+window.addEventListener("deviceorientation", function (event) {
+  yOffset = event.beta;
+  xOffset = event.gamma;
+  moveSquares(xOffset * 180, yOffset * 180)
+}, true);
