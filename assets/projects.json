@@ -1,0 +1,11 @@
+{
+  "active": [
+    { "name": "m4l3vich.ru", "type": "Веб-сайт", "description": "Мой личный сайт-визитка/блог.", "link": "https://m4l3vich.ru/" },
+    { "name": "Xenox RP", "type": "Игровой сервер", "description": "Roleplay-сервер GTA V. (В разработке)", "link": "https://vk.com/gta5_xenoxrp" }
+  ],
+  "archive": [
+    { "name": "sManager", "type": "Чат-бот", "description": "Бот для администрирования бесед ВКонтакте." },
+    { "name": "SunLand", "type": "Игровой сервер", "description": "Игровой сервер Minecraft." },
+    { "name": "sBot", "type": "Библиотека", "description": "Фреймворк для создания чат-ботов ВКонтакте." }
+  ]
+}
