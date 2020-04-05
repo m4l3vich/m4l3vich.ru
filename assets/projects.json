@@ -1,11 +1,54 @@
 {
   "active": [
-    { "name": "m4l3vich.ru", "type": "Веб-сайт", "description": "Мой личный сайт-визитка/блог.", "link": "https://m4l3vich.ru/" },
-    { "name": "Xenox RP", "type": "Игровой сервер", "description": "Roleplay-сервер GTA V. (В разработке)", "link": "https://vk.com/gta5_xenoxrp" }
+    {
+      "name": "m4l3vich.ru",
+      "type": "Веб-сайт",
+      "shortDescription": "Мой личный сайт-визитка/блог.",
+      "longDescription": "Веб-сайт со всей нужной информацией обо мне, а также мой блог, в который я выкладываю всё, что посчитаю нужным. Сделан на Vue, хостится на GitHub Pages.",
+      "links": [
+        { "type": "web", "href": "https://m4l3vich.ru/" }
+      ]
+    },
+    {
+      "name": "Xenox RP",
+      "type": "Игровой сервер",
+      "shortDescription": "Roleplay-сервер GTA V. (В разработке)",
+      "longDescription": "Уникальный roleplay-сервер Grand Theft Auto V.",
+      "myWork": "Дизайн, веб-сайт, серверную часть, CAD.",
+      "links": [
+        { "type": "vk", "href": "https://vk.com/gta5_xenoxrp" }
+      ]
+    },
+    {
+      "name": "sManager",
+      "type": "Чат-бот",
+      "shortDescription": "Бот для администрирования бесед ВКонтакте.",
+      "longDescription": "Бот ВКонтакте, созданный помогать администраторам бесед в управлении ими. Практически полностью лишен избыточного и развлекательного функционала, в отличие от других подобных ботов.",
+      "links": [
+        { "type": "vk", "href": "https://vk.com/smanager_bot" }
+      ]
+    }
   ],
   "archive": [
-    { "name": "sManager", "type": "Чат-бот", "description": "Бот для администрирования бесед ВКонтакте." },
-    { "name": "SunLand", "type": "Игровой сервер", "description": "Игровой сервер Minecraft." },
-    { "name": "sBot", "type": "Библиотека", "description": "Фреймворк для создания чат-ботов ВКонтакте." }
+    {
+      "name": "SunLand",
+      "type": "Игровой сервер",
+      "shortDescription": "Игровой сервер Minecraft.",
+      "longDescription": "Проект игровых серверов Minecraft с несколькими уникальными или почти уникальными режимами. Незадолго до закрытия проекта начали разрабатываться самописные плагины.",
+      "myWork": "Дизайн, веб-сайт, настройка серверной машины и игровых серверов, техническое администрирование, разработка плагинов.",
+      "links": [
+        { "type": "vk", "href": "https://vk.com/mcsunland" }
+      ]
+    },
+    {
+      "name": "sBot",
+      "type": "Библиотека",
+      "shortDescription": "Фреймворк для создания чат-ботов ВКонтакте.",
+      "longDescription": "Лёгкая (lightweight) и производительная библиотека для удобной работы с API ВКонтакте при создании ботов.",
+      "links": [
+        { "type": "vk", "href": "https://vk.com/sbot_gr" },
+        { "type": "npm", "href": "https://npmjs.com/package/sbot-vk" }
+      ]
+    }
   ]
 }
