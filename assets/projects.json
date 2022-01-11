@@ -6,16 +6,17 @@
       "shortDescription": "Мой личный сайт-визитка/блог.",
       "longDescription": "Веб-сайт со всей нужной информацией обо мне, а также мой блог, в который я выкладываю всё, что посчитаю нужным. Сделан на Vue, хостится на GitHub Pages.",
       "links": [
-        { "type": "web", "href": "https://m4l3vich.ru/" }
+        { "icon": "mdi-web", "href": "https://m4l3vich.ru/", "label": "Веб-сайт" }
       ]
     },
     {
-      "name": "Расписание звонков",
-      "type": "VK Mini Apps",
-      "shortDescription": "Мини-приложение для отслеживания расписания.",
-      "longDescription": "Мини-приложение ВКонтакте для точного отслеживания расписания звонков с возможностью синхронизации с учебными заведениями.",
+      "name": "Сканер сертификатов",
+      "type": "PWA",
+      "shortDescription": "Проверка сертификатов COVID-19.",
+      "longDescription": "Прогрессивное веб-приложение (PWA) на Vue.js 2, которое сканирует QR-коды с сертификатов вакцинации и проверяет их через API Госуслуг. Использует написанный мною же модуль для проверки сертификатов.",
       "links": [
-        { "type": "vk", "href": "https://vk.com/schedule_app" }
+        { "icon": "mdi-web", "href": "https://qrcode.m4l3vich.ru/", "label": "Приложение" },
+        { "icon": "mdi-github", "href": "https://github.com/m4l3vich/vue-cert-checker", "label": "Исходный код" }
       ]
     },
     {
@@ -25,8 +26,18 @@
       "longDescription": "Два небольших информационных веб-сайта для MST Network: \"Администрация\" и \"Информация для игроков\".",
       "myWork": "Редизайн front-end части существующих веб-сайтов в едином минималистичном стиле, связывание с предоставленным заказчиком Web API.",
       "links": [
-        { "type": "web", "href": "https://staff.mstnw.net/" },
-        { "type": "web", "href": "https://faq.mstnw.net/" }
+        { "icon": "mdi-web", "href": "https://staff.mstnw.net/", "label": "Администрация" },
+        { "icon": "mdi-web", "href": "https://faq.mstnw.net/", "label": "Инфо для игроков" }
+      ]
+    },
+    {
+      "name": "Расписание звонков",
+      "type": "VK Mini Apps",
+      "shortDescription": "Мини-приложение для отслеживания расписания.",
+      "longDescription": "Мини-приложение ВКонтакте для точного отслеживания расписания звонков с возможностью синхронизации с учебными заведениями.",
+      "links": [
+        { "icon": "mdi-cellphone", "href": "https://vk.com/app7619166", "label": "Приложение" },
+        { "icon": "mdi-vk", "href": "https://vk.com/schedule_app", "label": "Группа ВК" }
       ]
     }
   ],
@@ -37,7 +48,7 @@
       "shortDescription": "Бот для администрирования бесед ВКонтакте.",
       "longDescription": "Бот ВКонтакте, созданный помогать администраторам бесед в управлении ими. Практически полностью лишен избыточного и развлекательного функционала, в отличие от других подобных ботов.",
       "links": [
-        { "type": "vk", "href": "https://vk.com/smanager_bot" }
+        { "icon": "mdi-vk", "href": "https://vk.com/smanager_bot", "label": "Группа ВК" }
       ]
     },
     {
@@ -47,7 +58,7 @@
       "longDescription": "Уникальный roleplay-сервер Grand Theft Auto V.",
       "myWork": "Дизайн, веб-сайт, серверную часть, CAD.",
       "links": [
-        { "type": "vk", "href": "https://vk.com/gta5_xenoxrp" }
+        { "icon": "mdi-vk", "href": "https://vk.com/gta5_xenoxrp", "label": "Группа ВК" }
       ]
     },
     {
@@ -57,7 +68,7 @@
       "longDescription": "Проект игровых серверов Minecraft с несколькими уникальными или почти уникальными режимами. Незадолго до закрытия проекта начали разрабатываться самописные плагины.",
       "myWork": "Дизайн, веб-сайт, настройка серверной машины и игровых серверов, техническое администрирование, разработка плагинов.",
       "links": [
-        { "type": "vk", "href": "https://vk.com/mcsunland" }
+        { "icon": "mdi-vk", "href": "https://vk.com/mcsunland", "label": "Группа ВК" }
       ]
     },
     {
@@ -66,8 +77,8 @@
       "shortDescription": "Фреймворк для создания чат-ботов ВКонтакте.",
       "longDescription": "Лёгкая (lightweight) и производительная библиотека для удобной работы с API ВКонтакте при создании ботов.",
       "links": [
-        { "type": "vk", "href": "https://vk.com/sbot_gr" },
-        { "type": "npm", "href": "https://npmjs.com/package/sbot-vk" }
+        { "icon": "mdi-vk", "href": "https://vk.com/sbot_gr", "label": "Группа ВК" },
+        { "icon": "mdi-npm", "href": "https://npmjs.com/package/sbot-vk", "label": "NPM" }
       ]
     }
   ]
