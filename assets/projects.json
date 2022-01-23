@@ -39,6 +39,17 @@
         { "icon": "mdi-cellphone", "href": "https://vk.com/app7619166", "label": "Приложение" },
         { "icon": "mdi-vk", "href": "https://vk.com/schedule_app", "label": "Группа ВК" }
       ]
+    },
+    {
+      "name": "Веб-сайты MST",
+      "type": "Заказ",
+      "shortDescription": "Веб-сайты для Minecraft-проекта MST Network.",
+      "longDescription": "Два небольших информационных веб-сайта для MST Network: \"Администрация\" и \"Информация для игроков\".",
+      "myWork": "Редизайн front-end части существующих веб-сайтов в едином минималистичном стиле, связывание с предоставленным заказчиком Web API.",
+      "links": [
+        { "type": "web", "href": "https://staff.mstnw.net/" },
+        { "type": "web", "href": "https://faq.mstnw.net/" }
+      ]
     }
   ],
   "archive": [
